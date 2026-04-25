@@ -1,0 +1,9 @@
+pandas
+spacy
+textstat
+textblob
+matplotlib
+seaborn
+scikit-learn
+streamlit
+plotly

@@ -1,0 +1,45 @@
+# Project-local data and workspace
+data/2000users
+.prism/
+
+# Generated clustering outputs and root-level matrix CSVs are tracked on purpose.
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test, lint, and notebook caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.ipynb_checkpoints/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS and temp files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.temp
