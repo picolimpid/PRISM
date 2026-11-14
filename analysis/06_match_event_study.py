@@ -5,10 +5,12 @@ exact-matched within (feed, cohort week) on coarsened pre-period history. Three 
   early : history up to week c-5 only (activity, tenure, target-feed likes, other-feed likes)  -> tests pre-endorsement drift
   full  : history up to week c-1
 Week 0 (the week containing the endorsement) mixes pre and post days and is excluded from the DiD.
-usage: python3 analysis/06_match_event_study.py [K controls=10] [n_boot=1000]"""
+usage: python3 analysis/06_match_event_study.py [K controls=10] [n_boot=1000] [placebo shift in weeks=0]"""
 import sys, numpy as np, pandas as pd, scipy.sparse as sp
 O='data/derived'; FEEDS=['Science','News','#UkrainianView']; NW=64; LASTW=62; H=8   # Blacksky archive only covers 2024-02/03: no pre-period
 K=int(sys.argv[1]) if len(sys.argv)>1 else 10; NB=int(sys.argv[2]) if len(sys.argv)>2 else 1000
+SHIFT=int(sys.argv[3]) if len(sys.argv)>3 else 0   # placebo: pretend the endorsement happened SHIFT weeks earlier
+TAG=f'_placebo{SHIFT}' if SHIFT else ''
 rng=np.random.default_rng(7)
 M=np.load(f'{O}/panel_meta.npz'); users=M['users']; first_post=M['first'].astype(int); eng=M['eng']; N=len(users)
 uix=pd.Series(np.arange(N),index=users)
@@ -48,7 +50,7 @@ rows=[]; summ=[]; pairs=[]
 for f in FEEDS:
     startw=int(np.argmax(LK[f].sum(0)>0)); bf=B[B.feed==f]; endorsers=uix.reindex(bf.user).values.astype(int)
     isend=np.zeros(N,bool); isend[endorsers]=True
-    cw=pd.Series(bf.w.values,index=endorsers)
+    cw=pd.Series(bf.w.values-SHIFT,index=endorsers)
     Y={o:fn(f) for o,fn in OUT.items()}
     oth_end=np.zeros((N,NW),bool); bo=B[(B.feed!=f)&(B.w<NW)]; oth_end[uix.reindex(bo.user).values.astype(int),bo.w.values]=True
     for spec in ['naive','early','full','active']:
@@ -90,9 +92,9 @@ for f in FEEDS:
             for s,v in stats.items():
                 b=v[bi].mean(1); summ.append(dict(feed=f,spec=spec,outcome=o,stat=s,n=n,est=v.mean(),lo=np.percentile(b,2.5),hi=np.percentile(b,97.5),
                                                  treated_post=tm[:,ix(2,8)].mean(),control_post=cm[:,ix(2,8)].mean()))
-pd.DataFrame(rows).to_csv('results/rq3_event_study.csv',index=False)
-S=pd.DataFrame(summ); S.to_csv('results/rq3_summary.csv',index=False)
-pd.DataFrame(pairs,columns=['feed','c','treated','control']).to_parquet(f'{O}/matched_pairs_full.parquet')
+pd.DataFrame(rows).to_csv(f'results/rq3_event_study{TAG}.csv',index=False)
+S=pd.DataFrame(summ); S.to_csv(f'results/rq3_summary{TAG}.csv',index=False)
+if not SHIFT: pd.DataFrame(pairs,columns=['feed','c','treated','control']).to_parquet(f'{O}/matched_pairs_full.parquet')
 pd.set_option('display.width',250); pd.set_option('display.max_rows',500)
 S['ci']=S.apply(lambda r: f"{r.est:+.4f} [{r.lo:+.4f},{r.hi:+.4f}]",axis=1)
 for o in ['like_any','act_any']:

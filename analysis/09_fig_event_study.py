@@ -19,5 +19,5 @@ for i,f in enumerate(FEEDS):
         a.text(0.02,0.95,f'n = {int(d.n.iloc[0]):,}',transform=a.transAxes,va='top',fontsize=8,color='#52514e')
         a.set_xticks(range(-8,9,2))
 ax[0,2].legend(frameon=False,fontsize=8,loc='upper right')
-fig.suptitle('Engagement with a feed rises before users endorse it, peaks in the endorsement week (shaded), and stays above matched controls for 8 weeks',fontsize=10,color=INK,x=0.01,ha='left')
+fig.suptitle('Engagement with a feed rises before users endorse it, peaks in the endorsement week (shaded), then declines; matched controls regress faster',fontsize=10,color=INK,x=0.01,ha='left')
 fig.tight_layout(rect=(0,0,1,0.96)); fig.savefig('figures/fig1_event_study.png',dpi=170); print('saved')

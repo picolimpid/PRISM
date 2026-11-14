@@ -94,6 +94,7 @@ Bluesky 允许用户公开"点赞"一个 custom feed（数据集里叫 bookmark�
 - `07_rq2_prediction.py` 第一次运行在 Blacksky 人群 B 上崩溃（只有一类标签），浪费约 40 分钟；Science 的两行从日志恢复，News / #UkrainianView 重跑。
 - `11_rank_build.py` 第一版负样本取"点赞前 48 小时内的帖子"，recency 单独就有 AUC 0.82；改为"与正样本发帖时间 ±6 小时"后 recency 仍有 0.73，第一版结果作废。
 - `06` 加 active 规格时改坏了一行常量，重跑一次。
-- 没做：placebo 日期、E-value、FDR、advisor-panel 推演、约 15 篇 personalization 论文。原因是优先做了用户中途追加的两条旧 proposal 线。
+- 第一版报告之后补做了 placebo 日期检验（背书周提前 16 周）和 E-value。**placebo 没通过**（Science +14.5，与真实 +14.2 一样大）：RQ3 判据 (b) 虽然字面满足，但不能解读为背书的效应；`REPORT.md` 的结论已改写为 selection。
+- 没做：FDR、换匹配粒度、advisor-panel 推演、约 15 篇 personalization 论文。原因是优先做了用户中途追加的两条旧 proposal 线。
 
 原计划 12 小时，实际约 3 小时把计划内的实验跑完（数据下载和解析比预计快得多）。剩下的工作见 `REPORT.md` §5，都需要新数据、IRB 或你的决定。

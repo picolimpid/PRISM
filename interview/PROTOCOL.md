@@ -14,7 +14,7 @@
 | F1 点赞 feed 的人里 35–51% 从未点赞过 feed 内任何帖子；8 周内 30–43% 在平台上照常发帖却与 feed 零互动 | (a) 看了不点赞（潜水式消费）(b) 点完就没再打开（aspirational）(c) 点赞 feed 是给创建者的支持，不是订阅 | Q4–Q7 | (a) 为主：点赞数低估消费，"feed like = subscriber" 仍可用但 engagement 指标要改；(b)/(c) 为主：feed like 不能当订阅代理 |
 | F2 点赞过 feed 内容的人里只有 0.7–8% 点赞了 feed 本身；最重度的 1% 里也只有 4–56% | (a) 不知道帖子来自哪个 feed (b) 用 pin 不用 like (c) 内容是从 Following 看到的 | Q8–Q10 | 决定"feed 曝光"在观察数据里能不能被定义 |
 | F3 背书前 4 周对该 feed 内容的互动已经在上升 | (a) 先在时间线上反复碰到这类内容，后来才找到 feed (b) 先用 feed 一段时间，确认喜欢才点赞 | Q2–Q3, Q11 | (b) 为主：背书时间不是曝光起点，Pal et al. 式"首次互动 = treatment"的时间锚需要前移 |
-| F4 背书后互动高于对照并持续 8 周，但逐周衰减 | 新鲜感 vs 习惯；是否把 feed 设为默认 | Q12–Q14 | 解释衰减；设计建议（提醒、默认 feed） |
+| F4 背书当周是互动高点，之后 8 周逐周回落；高于对照的差距没通过 placebo 检验（是 selection） | 为什么在那个时点背书；之后为什么回落（新鲜感、话题事件结束、换了默认 feed） | Q12–Q14 | 解释衰减；设计建议（提醒、默认 feed） |
 | F5 冷启动用户里，背书者后续互动是 implicit 模型预测的 1.8–6.6 倍 | 新用户是否把选 feed 当作"告诉平台我要什么" | Q1, Q15 | 支持"显式选择在冷启动最有信息量"的设计含义 |
 | F6 LLM 从点赞历史推断的 value profile 几乎没有预测力且高度同质 | 用户自己是否用"价值"来描述想看的内容 | Q16–Q18 | 决定 value-based feed 控件（Alexandria 一类）该怎么呈现 |
 | F7 话题型 feed（Science、News）与立场/社区型 feed（#UkrainianView）差异 | 归属感 vs 工具 | Q19–Q20 | 对应 common identity / bond 与 utility / community 两种取向 |
