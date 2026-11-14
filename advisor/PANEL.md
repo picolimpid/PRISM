@@ -39,7 +39,8 @@
 4. **理论是什么？** 他习惯先从心理学或传播学借一个理论再去操作化 [inferred: yuan2026mental, saha2024observer]。
    stated vs revealed preference 是经济学的说法；他可能更想看到心理学一侧的框架，例如 intention–behavior gap、自我呈现（他自己用过 observer effect 和 self-presentation）[Claude]。这部分文献第一轮没有读，需要补。
 5. **和 Pal et al. 的关系。** 那篇自己写了局限："Although our quasi-experimental design mitigates confounders compared to purely correlational approaches, it does not establish true causality." [quote pal2026algorithmic p.10]
-   本项目的 RQ7（Science 背书者的写作在背书前就更接近 feed，背书后没有增加）会被读成对它的质疑。他不会反对做检验，但会要求在**他们的 treatment 定义下**（首次任何互动）做同样的 pre-trend 和 placebo，而不是换一个锚点就下结论 [Claude]。见第 7 节 A8。
+   第一轮的 RQ7（Science 背书者的写作在背书后没有增加）本来会被读成对它的质疑。他不会反对做检验，但会要求在**他们的 treatment 定义下**（首次任何互动）做同样的 pre-trend 和 placebo，而不是换一个锚点就下结论 [Claude]。
+   **A8 已经照此做了，结果是第一轮的说法不成立**：按写作历史匹配之后，在他们的定义下 Science 没有事前趋势、placebo 为零、首次互动之后相似度小幅上升，方向与他们一致（REPORT §2.7）。现在可以带去的是一张支持性的逐周图，而不是质疑。
 
 ## 4. Eshwar 会追问的
 
@@ -64,28 +65,28 @@
 
 | 清单项 | 现状 | 缺什么 |
 |---|---|---|
-| Target population | 三个 feed、时段、语言已写 | 纳入 / 排除流程表；一到平台就背书的人单独描述（A4） |
+| Target population | 三个 feed、时段、语言已写；没有先前可见痕迹的背书者已单独描述 | 纳入 / 排除流程表 |
 | Question and estimand | RQ1–RQ8 有判据 | 每条发现标明是描述、预测还是因果；现在没有因果结论 |
-| Constructs and measures | 核对过 bookmark 是公开点赞而不是 pin | 「说」和「做」两个构念的效度证据（A1–A3），访谈之前只能做到部分 |
+| Constructs and measures | 核对过 bookmark 是公开点赞而不是 pin；小时级时间结构、是否关注作者、供稿者身份三项日志证据 | 五分之四的背书者背书时没有同时发生的可见互动，他们在做什么要靠访谈 |
 | Collection and provenance | 公开数据集，MD5 校验；Blacksky 存档只有 2024-02/03 | 写明存档覆盖的检查方法；这个问题对组里另两篇也有影响，要当面讲 |
-| Assignment and timing | 按日历周分 cohort；事件研究 −8…+8 周 | 小时级的时间结构（A1） |
-| Adjustment and overlap | 粗化精确匹配，报告了匹配率 | 匹配前后的 SMD 平衡表（A7）；匹配丢掉了谁 |
-| Sensitivity and uncertainty | placebo 日期、四种对照设计、粒度、E-value、bootstrap | 多重比较校正（A9）；异质性（A5） |
+| Assignment and timing | 按日历周分 cohort；事件研究 −8…+8 周；小时级时间结构 | 同期事件（如 2024-02 平台开放）对各 cohort 的影响没有单独分析 |
+| Adjustment and overlap | 粗化精确匹配，报告了匹配率和匹配前后的 SMD | 匹配丢掉了谁（未匹配上的背书者的描述） |
+| Sensitivity and uncertainty | placebo 日期、四种对照设计、粒度、E-value、bootstrap、BH 校正、分层 | placebo 只有 3 个固定位移，可扩成一组随机日期 |
 | Interpretation and reuse | 代码和结果在仓库 | 把 selection 的结论和「背书是信息不是干预」写成正文的解释框架 |
 
 ## 7. 建议的下一步：按对论文的威胁排序，每条对应一个只用现有数据就能做的分析
 
 | # | 他们会问的问题 | 现有数据上能做的分析 | 状态 |
 |---|---|---|---|
-| A1 | 点赞 feed 的那一刻，用户是不是真的在用这个 feed？ | 以背书时刻为零点，按小时统计对该 feed 帖子的点赞；与同一用户其它日子的同一时段比较 | 待跑 |
-| A2 | 对 feed 内帖子的点赞，是通过 feed 看到的，还是在 Following 里看到的？ | 重新下载关注关系，把点赞拆成「关注了作者」和「没关注作者」两类，看背书前后的变化集中在哪一类 | 待跑 |
-| A3 | 背书者是受众还是内容贡献者？ | 背书者中有多少人自己的帖子被 feed 收录；贡献者与纯受众的背书率 | 待跑 |
-| A4 | 11 个 feed 的背书行为是什么样？一到平台就背书的人是谁？ | 背书相对账号首次出现的时间；同一小时内连续背书多个 feed 的比例；到达即背书者之后 8 周的行为 | 待跑 |
-| A5 | 对谁是起点，对谁是高点？ | 事件研究按背书前有无互动历史、按资历分层 | 待跑 |
-| A6 | 谁说了就做，谁说了不做？创建者看到的受众是谁？ | 以「背书后 8 周是否互动」为因变量的回归；每周 feed 内点赞中背书者的份额 | 待跑 |
-| A7 | 匹配后两组到底像不像？ | 匹配前后各协变量的标准化均值差 | 待跑 |
-| A8 | 在 Pal et al. 的 treatment 定义下，pre-trend 和 placebo 是什么样？ | 以首次任何互动为锚，画写作相似度的逐周曲线并做 placebo 日期 | 待跑 |
-| A9 | 这么多检验，校正之后还剩什么？ | 全部检验做 BH-FDR | 待跑 |
+| A1 | 点赞 feed 的那一刻，用户是不是真的在用这个 feed？ | 以背书时刻为零点，按小时统计对该 feed 帖子的点赞；与同一用户其它日子的同一时段比较 | 已跑，见 REPORT §2.3 |
+| A2 | 对 feed 内帖子的点赞，是通过 feed 看到的，还是在 Following 里看到的？ | 重新下载关注关系，把点赞拆成「关注了作者」和「没关注作者」两类，看背书前后的变化集中在哪一类 | 已跑，见 REPORT §2.3 |
+| A3 | 背书者是受众还是内容贡献者？ | 背书者中有多少人自己的帖子被 feed 收录；贡献者与纯受众的背书率 | 已跑，见 REPORT §2.3 |
+| A4 | 11 个 feed 的背书行为是什么样？一到平台就背书的人是谁？ | 背书相对账号首次出现的时间；同一小时内连续背书多个 feed 的比例；到达即背书者之后 8 周的行为 | 已跑，见 REPORT §2.2、§2.3 |
+| A5 | 对谁是起点，对谁是高点？ | 事件研究按背书前有无互动历史、按资历分层 | 已跑，见 REPORT §2.4.2 |
+| A6 | 谁说了就做，谁说了不做？创建者看到的受众是谁？ | 以「背书后 8 周是否互动」为因变量的回归；每周 feed 内点赞中背书者的份额 | 已跑，见 REPORT §2.1、§2.6 |
+| A7 | 匹配后两组到底像不像？ | 匹配前后各协变量的标准化均值差 | 已跑，见 REPORT §2.4 |
+| A8 | 在 Pal et al. 的 treatment 定义下，pre-trend 和 placebo 是什么样？ | 以首次任何互动为锚，画写作相似度的逐周曲线并做 placebo 日期 | 已跑，见 REPORT §2.7 |
+| A9 | 这么多检验，校正之后还剩什么？ | 全部检验做 BH-FDR | 已跑，见 REPORT §2.8 |
 
 ## 8. 他们组里最接近的工作，以及可以借的做法
 
@@ -100,7 +101,7 @@
 ## 9. 带去真实组会的问题
 
 1. 论文的主张定在「说的和做的不重合，背书是信息而不是干预」，是否同意？因果部分只作为反面结果（selection）出现。
-2. RQ7 和第二轮的 placebo 结果与 Pal et al. 的关系怎么处理？是否需要先和 Olivia 对一下，在她的设定下重跑？
+2. 我在 Pal et al. 的 treatment 定义下画了写作相似度的逐周曲线并做了 placebo（方向与那篇一致，Science 无事前趋势，News 有一个很小的事前斜率）。这张图对那篇有没有用？是否需要和 Olivia 对一下，用她的编码器和匹配重跑？另外，互动（点赞）这个结果变量上的 placebo 没通过，这一点和那篇把 bookmark 算作曝光的做法有关，怎么写合适？
 3. 我们的公开版数据里 Blacksky 的帖子存档只覆盖 2024 年 2–3 月。组里那份是不是一样？如果一样，Blacksky 上「首次互动」的日期会集中在这两个月。
 4. 主分析单位选用户还是 feed？
 5. 访谈招募范围：只招这三个 feed 的用户，还是任何使用 custom feed 的人？访谈里给受访者看根据其公开点赞生成的 profile，IRB 上是否可行？

@@ -1,0 +1,4 @@
+STELA: a community-centred approach to norm elicitation for AI alignment
+MIND: A Large-scale Dataset for News Recommendation
+Enabling User Agency in Scalable Content Recommendations with Large Language Models
+Schwartz human values social media posts measurement Epstein

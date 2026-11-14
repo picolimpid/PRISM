@@ -1,0 +1,109 @@
+feed,anchor,shift,stat,n,eligible,est,se,lo,hi
+Science,first engagement of any kind,0,pre-trend slope of gap per week (-8..-2),11180,11188,-0.00013964432771120173,0.00010138712541593084,-0.0003404508186658209,6.586397233019985e-05
+Science,first engagement of any kind,0,matched pre gap (-8..-2),11180,11188,0.0007380947936326265,0.00017981011478696018,0.00035079708104603926,0.0010897733474848792
+Science,first engagement of any kind,0,DiD post(2..8) - pre(-8..-2),11180,11188,0.0007843603380024433,0.0003297111252322793,0.00010353797842981294,0.0014084164751693602
+Science,first engagement of any kind,0,DiD late(5..8) - pre(-8..-2),11180,11188,0.0006525785429403186,0.00037708153831772506,-8.398284699069333e-05,0.0013695043162442742
+Science,first engagement of any kind,0,gap in anchor week,11180,11188,0.0018371136393398046,0.00045028296881355345,0.0009543844615109264,0.002700451924465596
+Science,first engagement of any kind,0,UNMATCHED pre-period level gap,11180,11188,0.004705075871147425,,,
+Science,first engagement of any kind,0,SMD after matching: pre similarity,11180,11188,0.01610936972874436,,,
+Science,first engagement of any kind,0,SMD after matching: pre weeks with posts,11180,11188,-0.03547452652206488,,,
+Science,first engagement of any kind,0,SMD after matching: log activity,11180,11188,0.08004851481379506,,,
+Science,endorsement,0,pre-trend slope of gap per week (-8..-2),1128,1137,0.00025770714767401964,0.00036196965382636183,-0.0004481127211225353,0.000990005759415778
+Science,endorsement,0,matched pre gap (-8..-2),1128,1137,0.0010811033425852656,0.0005719191394746304,-7.176102863013511e-05,0.0022387392178643494
+Science,endorsement,0,DiD post(2..8) - pre(-8..-2),1128,1137,0.0035500500816851854,0.0010412614792585373,0.0015170274156844244,0.005579262727405876
+Science,endorsement,0,DiD late(5..8) - pre(-8..-2),1128,1137,0.0038795028813183308,0.0011748685501515865,0.0016106394992675634,0.006298171740490943
+Science,endorsement,0,gap in anchor week,1128,1137,0.007543622516095638,0.0013586549321189523,0.004944043525028974,0.01033134968020022
+Science,endorsement,0,UNMATCHED pre-period level gap,1128,1137,0.012452914301722115,,,
+Science,endorsement,0,SMD after matching: pre similarity,1128,1137,0.03307892935629247,,,
+Science,endorsement,0,SMD after matching: pre weeks with posts,1128,1137,-0.02188997930087891,,,
+Science,endorsement,0,SMD after matching: log activity,1128,1137,0.03660098872261218,,,
+Science,first engagement of any kind,13,pre-trend slope of gap per week (-8..-2),1598,1600,0.0002203869724845781,0.0002774688573087837,-0.0002883145330997648,0.0007829835279153485
+Science,first engagement of any kind,13,matched pre gap (-8..-2),1598,1600,-5.3064210078446195e-05,0.0004879024054389447,-0.0010088753188028932,0.0009187101677525787
+Science,first engagement of any kind,13,DiD post(2..8) - pre(-8..-2),1598,1600,0.0004639335675165057,0.0008211620151996613,-0.0011564536835066974,0.0020295525551773607
+Science,first engagement of any kind,13,DiD late(5..8) - pre(-8..-2),1598,1600,0.0003576972521841526,0.001010822830721736,-0.0015681898250477387,0.0023416544136125586
+Science,first engagement of any kind,13,gap in anchor week,1598,1600,-0.0004082323575858027,0.0012088402872905135,-0.0029788516461849214,0.0017416802147636175
+Science,first engagement of any kind,13,UNMATCHED pre-period level gap,1598,1600,0.0018372571468353272,,,
+Science,first engagement of any kind,13,SMD after matching: pre similarity,1598,1600,0.002948996772332057,,,
+Science,first engagement of any kind,13,SMD after matching: pre weeks with posts,1598,1600,-0.02099946136088136,,,
+Science,first engagement of any kind,13,SMD after matching: log activity,1598,1600,0.04737016524480343,,,
+Science,endorsement,13,pre-trend slope of gap per week (-8..-2),68,69,0.0021725610297705445,0.0011406209227749744,-0.00010378685297577467,0.004410952946844712
+Science,endorsement,13,matched pre gap (-8..-2),68,69,0.0026694342959672213,0.0024970911908894777,-0.0018955887557240202,0.007525471248663961
+Science,endorsement,13,DiD post(2..8) - pre(-8..-2),68,69,0.007826018147170544,0.004900042433291674,-0.001962916279444471,0.017132984707131982
+Science,endorsement,13,DiD late(5..8) - pre(-8..-2),68,69,0.00660919351503253,0.005248675588518381,-0.0036260145425330848,0.017101889569312332
+Science,endorsement,13,gap in anchor week,68,69,0.0016759962309151888,0.005165596958249807,-0.008489669649861753,0.01127428957261145
+Science,endorsement,13,UNMATCHED pre-period level gap,68,69,0.012126756751019022,,,
+Science,endorsement,13,SMD after matching: pre similarity,68,69,-0.03852935004538648,,,
+Science,endorsement,13,SMD after matching: pre weeks with posts,68,69,-0.021654523359091113,,,
+Science,endorsement,13,SMD after matching: log activity,68,69,0.01575081942987946,,,
+Science,first engagement of any kind; controls engage >=13 wk later,0,pre-trend slope of gap per week (-8..-2),10324,11188,-4.736367866696261e-05,0.0001053247763544674,-0.0002548770496884702,0.0001623175512837146
+Science,first engagement of any kind; controls engage >=13 wk later,0,matched pre gap (-8..-2),10324,11188,0.0005625036428682506,0.00019796655396930873,0.00016375907362089492,0.0009447096483199857
+Science,first engagement of any kind; controls engage >=13 wk later,0,DiD post(2..8) - pre(-8..-2),10324,11188,0.0015349051682278514,0.00033813618938438594,0.0008883961694664322,0.0022048320970498025
+Science,first engagement of any kind; controls engage >=13 wk later,0,DiD late(5..8) - pre(-8..-2),10324,11188,0.0015214488375931978,0.00039852698682807386,0.0007477906430722215,0.002307668694993481
+Science,first engagement of any kind; controls engage >=13 wk later,0,gap in anchor week,10324,11188,0.0026376887690275908,0.0004397094890009612,0.0017984548409003764,0.0034946956671774386
+Science,first engagement of any kind; controls engage >=13 wk later,0,UNMATCHED pre-period level gap,10324,11188,0.005344437820850887,,,
+Science,first engagement of any kind; controls engage >=13 wk later,0,SMD after matching: pre similarity,10324,11188,0.012795518677061097,,,
+Science,first engagement of any kind; controls engage >=13 wk later,0,SMD after matching: pre weeks with posts,10324,11188,-0.032373172660605014,,,
+Science,first engagement of any kind; controls engage >=13 wk later,0,SMD after matching: log activity,10324,11188,0.07912084777551892,,,
+Science,endorsement; controls endorse >=13 wk later,0,pre-trend slope of gap per week (-8..-2),879,1137,0.0009658713908200817,0.0004665339164421177,7.531784846962955e-05,0.0019007181232414687
+Science,endorsement; controls endorse >=13 wk later,0,matched pre gap (-8..-2),879,1137,7.883992657298222e-05,0.0007219089311547577,-0.0013171897764550522,0.0014738859928911541
+Science,endorsement; controls endorse >=13 wk later,0,DiD post(2..8) - pre(-8..-2),879,1137,0.00237254542298615,0.0013765221228823066,-0.00033120192456408403,0.005186703300569206
+Science,endorsement; controls endorse >=13 wk later,0,DiD late(5..8) - pre(-8..-2),879,1137,0.006472265813499689,0.0014692883705720305,0.003529779176460579,0.009440613235346973
+Science,endorsement; controls endorse >=13 wk later,0,gap in anchor week,879,1137,0.005297051277011633,0.0017275448190048337,0.0020997044921386987,0.008880902850069105
+Science,endorsement; controls endorse >=13 wk later,0,UNMATCHED pre-period level gap,879,1137,0.002169260912352447,,,
+Science,endorsement; controls endorse >=13 wk later,0,SMD after matching: pre similarity,879,1137,0.030056054618192742,,,
+Science,endorsement; controls endorse >=13 wk later,0,SMD after matching: pre weeks with posts,879,1137,-0.017911600497140592,,,
+Science,endorsement; controls endorse >=13 wk later,0,SMD after matching: log activity,879,1137,-0.023059530990648433,,,
+News,first engagement of any kind,0,pre-trend slope of gap per week (-8..-2),11804,11813,0.00016594912735204813,6.547882211141116e-05,3.585284014856632e-05,0.0002967113216982398
+News,first engagement of any kind,0,matched pre gap (-8..-2),11804,11813,7.334256952162832e-05,0.0001189658505609259,-0.00014916670552338472,0.00030481832072837273
+News,first engagement of any kind,0,DiD post(2..8) - pre(-8..-2),11804,11813,0.001002675388008356,0.00023111424525268376,0.0005651304643834009,0.0014666312403278424
+News,first engagement of any kind,0,DiD late(5..8) - pre(-8..-2),11804,11813,0.0008755445014685392,0.00028061066404916346,0.0003395262254343834,0.0014373030106071382
+News,first engagement of any kind,0,gap in anchor week,11804,11813,0.0011295226868242025,0.0003320531686767936,0.0004980696830898523,0.0018043377669528125
+News,first engagement of any kind,0,UNMATCHED pre-period level gap,11804,11813,0.001418091830417727,,,
+News,first engagement of any kind,0,SMD after matching: pre similarity,11804,11813,0.011155107629378465,,,
+News,first engagement of any kind,0,SMD after matching: pre weeks with posts,11804,11813,-0.008957082824731061,,,
+News,first engagement of any kind,0,SMD after matching: log activity,11804,11813,0.11319618887525514,,,
+News,endorsement,0,pre-trend slope of gap per week (-8..-2),477,479,8.985378553916245e-05,0.0002922447886583952,-0.00045559578720713026,0.0006327020534627081
+News,endorsement,0,matched pre gap (-8..-2),477,479,-0.0011367365950718522,0.0006118636229075491,-0.002371271135052666,7.755131373414732e-05
+News,endorsement,0,DiD post(2..8) - pre(-8..-2),477,479,0.002514004474505782,0.001176274148747325,0.00031371150616905653,0.005088556127157062
+News,endorsement,0,DiD late(5..8) - pre(-8..-2),477,479,0.0005684759235009551,0.001431714161299169,-0.0024172943900339305,0.003298543364508076
+News,endorsement,0,gap in anchor week,477,479,0.0005841535748913884,0.0015369135653600097,-0.0024875788134522737,0.0035158365441020573
+News,endorsement,0,UNMATCHED pre-period level gap,477,479,0.003438801133309127,,,
+News,endorsement,0,SMD after matching: pre similarity,477,479,-0.028923907994817765,,,
+News,endorsement,0,SMD after matching: pre weeks with posts,477,479,-0.03735588813488166,,,
+News,endorsement,0,SMD after matching: log activity,477,479,0.09871989676233775,,,
+News,first engagement of any kind,13,pre-trend slope of gap per week (-8..-2),3029,3030,-0.00034185844525122126,0.00014683786023484677,-0.0006289544334712055,-5.890282913501977e-05
+News,first engagement of any kind,13,matched pre gap (-8..-2),3029,3030,0.0004960326477885246,0.00025941626518033445,-1.7469555859861424e-05,0.0009845822321949526
+News,first engagement of any kind,13,DiD post(2..8) - pre(-8..-2),3029,3030,-0.0003282398101873696,0.000435237045167014,-0.0011683516844641418,0.0005201264080824328
+News,first engagement of any kind,13,DiD late(5..8) - pre(-8..-2),3029,3030,-0.0005525000742636621,0.0005026411381550133,-0.0015125339530641213,0.0004146360763115803
+News,first engagement of any kind,13,gap in anchor week,3029,3030,-9.004624735098332e-05,0.0006557703018188477,-0.0013617420889204368,0.0011710598977515473
+News,first engagement of any kind,13,UNMATCHED pre-period level gap,3029,3030,0.0015193294573931804,,,
+News,first engagement of any kind,13,SMD after matching: pre similarity,3029,3030,0.014439315899726477,,,
+News,first engagement of any kind,13,SMD after matching: pre weeks with posts,3029,3030,-0.0015698485361560796,,,
+News,first engagement of any kind,13,SMD after matching: log activity,3029,3030,0.059444684673954015,,,
+News,endorsement,13,pre-trend slope of gap per week (-8..-2),183,184,-0.0005398195519644236,0.0006829569593549741,-0.001857243193444447,0.0008475383622551031
+News,endorsement,13,matched pre gap (-8..-2),183,184,-0.0005749809206463397,0.001112369354814291,-0.002765407261904329,0.001599790510954335
+News,endorsement,13,DiD post(2..8) - pre(-8..-2),183,184,0.0015354182105511427,0.0016934947343543172,-0.0016780235193436966,0.0049114964553155
+News,endorsement,13,DiD late(5..8) - pre(-8..-2),183,184,0.0005418238579295576,0.0019153072498738766,-0.003183458495186642,0.00427457308396697
+News,endorsement,13,gap in anchor week,183,184,0.0036233412101864815,0.002875711303204298,-0.0018702814995776862,0.009217814006842672
+News,endorsement,13,UNMATCHED pre-period level gap,183,184,0.004589525253876396,,,
+News,endorsement,13,SMD after matching: pre similarity,183,184,-0.022685568513536883,,,
+News,endorsement,13,SMD after matching: pre weeks with posts,183,184,-0.02245160580094994,,,
+News,endorsement,13,SMD after matching: log activity,183,184,0.059897524507459866,,,
+News,first engagement of any kind; controls engage >=13 wk later,0,pre-trend slope of gap per week (-8..-2),11002,11813,0.0001257288778495941,6.91398651510551e-05,-1.2377183778815923e-05,0.0002557080069915888
+News,first engagement of any kind; controls engage >=13 wk later,0,matched pre gap (-8..-2),11002,11813,3.718550215126015e-05,0.00012789247557520866,-0.00020337640817160718,0.000283268018392846
+News,first engagement of any kind; controls engage >=13 wk later,0,DiD post(2..8) - pre(-8..-2),11002,11813,0.0015352281043305993,0.00024278696218971163,0.0010525404446525498,0.0019991862413007763
+News,first engagement of any kind; controls engage >=13 wk later,0,DiD late(5..8) - pre(-8..-2),11002,11813,0.0016474677249789238,0.0002794157771859318,0.0010945667454507202,0.0021546803181990977
+News,first engagement of any kind; controls engage >=13 wk later,0,gap in anchor week,11002,11813,0.0011719739995896816,0.00034177940688095987,0.0005325655423803255,0.0018721012864261865
+News,first engagement of any kind; controls engage >=13 wk later,0,UNMATCHED pre-period level gap,11002,11813,0.004264040511174962,,,
+News,first engagement of any kind; controls engage >=13 wk later,0,SMD after matching: pre similarity,11002,11813,0.006964914076922522,,,
+News,first engagement of any kind; controls engage >=13 wk later,0,SMD after matching: pre weeks with posts,11002,11813,-0.00783259407653116,,,
+News,first engagement of any kind; controls engage >=13 wk later,0,SMD after matching: log activity,11002,11813,0.1568153742674786,,,
+News,endorsement; controls endorse >=13 wk later,0,pre-trend slope of gap per week (-8..-2),349,479,-0.00012384888291957656,0.0003386544874959514,-0.000794315075232329,0.0005341383094868689
+News,endorsement; controls endorse >=13 wk later,0,matched pre gap (-8..-2),349,479,-0.0002508265897631645,0.0006461432785727084,-0.0014668155839899556,0.001023615480517037
+News,endorsement; controls endorse >=13 wk later,0,DiD post(2..8) - pre(-8..-2),349,479,-4.760549563798122e-05,0.001240352401509881,-0.002628409123281017,0.0023933464311994613
+News,endorsement; controls endorse >=13 wk later,0,DiD late(5..8) - pre(-8..-2),349,479,-0.0016904933145269752,0.001426957780495286,-0.004567451996263116,0.0011240460531553253
+News,endorsement; controls endorse >=13 wk later,0,gap in anchor week,349,479,0.003192531643435359,0.001764972461387515,-4.706139206973603e-05,0.006696056202054023
+News,endorsement; controls endorse >=13 wk later,0,UNMATCHED pre-period level gap,349,479,0.0051694476374105555,,,
+News,endorsement; controls endorse >=13 wk later,0,SMD after matching: pre similarity,349,479,-0.041794137260396755,,,
+News,endorsement; controls endorse >=13 wk later,0,SMD after matching: pre weeks with posts,349,479,-0.03862356505725971,,,
+News,endorsement; controls endorse >=13 wk later,0,SMD after matching: log activity,349,479,0.0461930549761776,,,

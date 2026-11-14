@@ -1,0 +1,14 @@
+2411.10109
+2209.06899
+2303.17548
+2208.04024
+2402.04559
+1801.07243
+2410.19302
+2511.13410
+2511.22130
+STELA: a community-centred approach to norm elicitation for AI alignment
+Enabling User Agency in Scalable Content Recommendations
+Measuring human values in social media posts
+Know Me, Respond to Me: Benchmarking LLMs for Dynamic User Profiling and Personalized Responses at Scale
+Alexandria: A Library of Pluralistic Values for Realtime Re-Ranking of Social Media Feeds

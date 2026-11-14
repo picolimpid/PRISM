@@ -8,14 +8,21 @@
 - 读了全文相关章节的：Failla & Rossetti 2024（数据采集与 feed 部分）、Greenwood & Garg 2026 Paper Skygest（采纳前后分析）、
   Zhou, Wang & Zhang 2026（方法、subscriber 定义、局限）。
 - 没有用任何模型筛选或总结论文；检索用的是标题精确查询和 3 次网页搜索（查新）。
-- 第二批（用户中途要求补读 personalization / 合成数据方向）：26 篇摘要，见 §4 和清单 J。其中 OpenAlex 当晚限流，另有约 15 篇计划内的论文没抓到，列在 J 末尾"未读"。
-- 合计 144 篇。下面只写对本项目有用的结论，不是综述。
+- 第二批（用户中途要求补读 personalization / 合成数据方向）：26 篇摘要，见 §3 和清单 J。其中 OpenAlex 当晚限流，另有约 15 篇计划内的论文没抓到，列在 J 末尾"未读"。
+- 合计 144 篇（第一轮）。
+- **第二轮（2026-11-14 上午）读了 12 篇摘要（10 篇是新的）+ 2 篇全文**，见 §4 和清单 K：
+  第一轮列为"未读"的 8 项里读到了 6 项的摘要（Park et al. 2024、Argyle et al. 2022、Santurkar et al. 2023、Social Simulacra、TEARS、Epstein et al. 2025），
+  另读了计划清单里第一轮没抓到的 6 篇（Xie et al. 2024、PersonaChat、PersonaMem、Alexandria 的 arXiv 版摘要、Jahanbakhsh et al. 2025、MIND）；
+  **BELA 读了正文全部六节（不含附录），Mem-PAL 读了正文全部（不含附录）**。
+  仍然没读到：STELA（arXiv 上没有，OpenAlex 和 Semantic Scholar 当天都限流）、"Enabling User Agency in Scalable Content Recommendations"（同上）、
+  Li et al. AAMAS 2026（没有标题，查不到）。intention–behavior gap 一类心理学文献（advisor-panel 提到 Koustuv 可能会要）也还没读。
+- 两轮合计 154 篇摘要级以上（第二轮新增 10 篇，另有 PersonaMem 和 Alexandria 两篇是重读；6 篇读了全文或全文相关章节）。下面只写对本项目有用的结论，不是综述。
 
 ## 1. 两位老师的工作里对本项目最要紧的
 
 | 论文 | 与本项目的关系 |
 |---|---|
-| Pal, Goyal, Chandrasekharan, Saha 2026 *Algorithmic Cultivation*（arXiv 2605.17010） | **同一份数据**。treatment = 首次与 feed 发生任何互动（bookmark/点赞/评论/转发/引用/发帖）；PSM（AdaBoost，15 层）；结果 = 语言向 feed 靠拢。只比较 post 期的 ATE，没有 event-study 和 pre-trend 图。本项目必须避开"feed → 语言"，并且把"显式表态"和"隐式互动"拆开。RQ7 是对它的 event-study 补充，不是重复。 |
+| Pal, Goyal, Chandrasekharan, Saha 2026 *Algorithmic Cultivation*（arXiv 2605.17010） | **同一份数据**。treatment = 首次与 feed 发生任何互动（bookmark/点赞/评论/转发/引用/发帖）；PSM（AdaBoost，15 层）；结果 = 语言向 feed 靠拢。只比较 post 期的 ATE，没有 event-study 和 pre-trend 图。本项目必须避开"feed → 语言"，并且把"显式表态"和"隐式互动"拆开。RQ7 是对它的 event-study 补充，不是重复。 **第二轮（A8）在它的 treatment 定义下重做了逐周曲线和 placebo：方向与它一致，Science 上没有事前趋势；第一轮 RQ7"背书后没有趋同"的说法已撤回（REPORT §2.7）。** |
 | Pal et al. 2026 *Hidden Toll of Social Media News*（EMNLP） | 同一数据的 News feed；发现"bookmark News feed"与心理语言恶化的关联比评论/引用大十倍以上。说明组里已经把 bookmark 当作一种 engagement 类型，但没有问它和实际互动是否一致。 |
 | Yuan et al. 2026 *Mental Health Impacts of AI Companions*（CHI） | **本项目的模板**：Reddit 准实验（分层 PSM + DiD）+ 18 个半结构化访谈，三角验证后给设计建议。 |
 | Lambert, Saha, Chandrasekharan 2025 *Does Positive Reinforcement Work?*（CHI） | PSM + DiD，目视检查 parallel trends，Bonferroni。我们的 event-study 是同一套路的周粒度版本。 |
@@ -55,7 +62,7 @@ Sun & Abraham、Callaway & Sant'Anna（交错处理时 TWFE 有偏，所以我�
 VanderWeele & Ding 2017（E-value）。
 
 
-## 4. Personalization 与合成数据（第二批）给出的启发
+## 3. Personalization 与合成数据（第二批）给出的启发
 
 - **BELA**（Benchmarking In-context Experiential Learning Through Repeated Product Recommendations, arXiv 2511.22130）：真实 Amazon 商品 + 合成 persona（已知潜在偏好）+ LLM 顾客模拟器；作者明说目的不是复现真实消费者，而是提供"可控、可扩展的测试台"。
 - **Mem-PAL**（arXiv 2511.13410）：没有真实长期交互数据时，用多步 LLM 合成 + 人工校验得到 PAL-Set。
@@ -65,7 +72,28 @@ VanderWeele & Ding 2017（E-value）。
 - **HyPerAlign、PRELUDE、PrefEval、PersonaMem、LaMP/LongLaMP、PersonalLLM**：都是从历史推断显式偏好再使用。Line B 的结果（推断出的 profile 不比原始历史多信息）对这一类方法在 feed 排序上的适用性是一个反例，值得在论文 related work 里点明。
 - **Hou et al. 2023（LLM zero-shot ranker）、Kang et al. 2023、ONCE、Radlinski et al. 2022、Agent4Rec、Törnberg et al. 2023、Y Social**：LLM 排序/用户模拟的基线与测试台，供后续扩展。
 
-## 3. 完整阅读清单
+## 4. 第二轮补读给出的启发（2026-11-14）
+
+- **Epstein et al. 2025（Whose Values?）直接解释了旧项目里 value 标注为什么不稳。** 他们让 1,079 人给 5,211 条帖子标 Schwartz 价值（32,370 条标注），
+  人与人之间一致性低，人与 LLM 之间也低；解决办法是让每个用户先做少量校准标注，再做**个性化**的价值分类器。
+  旧 PRISM 里 Qwen 与 GPT 的精确一致率只有 52%、value profile 的排序 AUC 只有 0.54，与这个结论一致：帖子表达了什么价值本身是主观的，
+  不存在一个可以从行为里推断出来、对所有人都成立的 value 标签。他们的修复同样依赖用户**自己给出**的显式输入。
+- **Park et al. 2024**：用两小时访谈（自述）构建的 agent 在 GSS 上达到受试者自身两周重测一致性的 83–86%，只用人口学信息是 74%。
+  和上一条、和 Line B/C 的结论是同一个方向：有信息量的是用户自己说的内容，不是从外部特征或行为替他们推断的摘要。
+- **Jahanbakhsh et al. 2025、Alexandria**：让用户对价值设权重来重排 feed（N=141、250；N=12、257），评估的是 feed 是否符合用户声明的价值，
+  没有评估用户之后是否真的按这些价值去互动。本项目的"说的和做的不重合"正好是这类 stated-preference 控件缺的那一半证据。
+- **TEARS**：LLM 写的文本用户摘要要和协同过滤的 VAE 表征对齐之后才能持平或超过基线；卖点是可检查、可编辑，不是更准。和 Line B 的结果（推断出的 profile 不如原始历史）一致。
+- **BELA（全文）**：真实 Amazon 商品（7.1 万件、2 千个选择集）+ 100 万个合成 persona + LLM 顾客模拟器；每个 persona 对每件商品的"真值"偏好由 GPT-4o 和 Gemini-1.5-Pro 打 0–100 分取平均，指标是 regret。
+  作者明说"designed for learnability rather than realism"，并在局限里写不期望模拟顾客反映真实用户。可借的三点：
+  (1) 打真值分的模型和当 oracle 的模型分开（oracle 用 Claude Sonnet 4），避免循环；Line C 现在模拟器和打分器用同一个 embedding 空间，正是这个问题；
+  (2) 一致性检查（三个种子的打分波动 4.1，远小于类内标准差 25.4；模拟回答与 persona 的一致率、重复询问的稳定率 94.4%）；
+  (3) 用人工挑选的"理想轨迹"证明环境里确实存在可学的跨 episode 信息，再说模型没学到。结论是前沿模型能在一个对话内学习，但不会跨 episode 积累。
+- **Mem-PAL（全文）**：100 个合成用户，画像 → persona（时间线 + 需求类型与偏好）→ 每个 session 的情境 → 日志和对话，逐级由 Qwen2.5-Max 生成，再做规则校验和人工修订；
+  按时间切分，最后一个月当评测。消融结果里，去掉具体的历史对话提纲（M_T）掉得最多（选择得分 38.3 → 28.1），去掉抽象的偏好原则（M_P）只掉到 36.3；
+  session 级检索基线就有 33.8。也就是说，即使在按设定种下偏好的合成数据上，**检索具体历史也比抽象出的偏好原则有用**，和 Line B 的 implicit-knn > 推断 profile 同向。
+- **Argyle 2022、Santurkar 2023、Social Simulacra、Xie 2024、PersonaChat、PersonaMem、MIND**：模拟人群与个性化基准的背景文献，对本项目主线没有新的约束。
+
+## 5. 完整阅读清单（A–K）
 
 ### A. Bluesky 与去中心化平台
 
@@ -209,4 +237,23 @@ chandrasekharan2018internet, saha2020psychosocial, goyal2026social；另有 zhan
 - Y Social: an LLM-powered Social Media Digital Twin
 - Mem-PAL (arXiv 2511.13410)；PersonaMem (2504.14225)；AlpsBench (2603.26680)；IBA-Bench (2608.02171)；BELA (2511.22130)
 
-未读（限流没抓到，后续补）：Generative Agent Simulations of 1,000 People；Out of One, Many；STELA；Epstein et al. 2025（社交媒体帖子的 Schwartz 价值测量）；Whose Opinions Do Language Models Reflect?；Li et al. AAMAS 2026；Social Simulacra；TEARS；Mem-PAL 与 BELA 的全文。
+第一轮未读的各项，第二轮的处理见清单 K。
+
+### K. 第二轮补读（2026-11-14）
+摘要：
+- Park, Zou, Kamphorst et al. (2024). LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals（即原题 Generative Agent Simulations of 1,000 People，arXiv 2411.10109 v3 改了标题）。
+- Argyle, Busby, Fulda et al. (2022). Out of One, Many: Using Language Models to Simulate Human Samples. arXiv 2209.06899.
+- Santurkar, Durmus, Ladhak et al. (2023). Whose Opinions Do Language Models Reflect? arXiv 2303.17548.
+- Park, Popowski, Cai et al. (2022). Social Simulacra. arXiv 2208.04024.
+- Xie, Chen, Jia et al. (2024). Can Large Language Model Agents Simulate Human Trust Behavior? arXiv 2402.04559.
+- Zhang, Dinan, Urbanek et al. (2018). Personalizing Dialogue Agents: I have a dog, do you have pets too? arXiv 1801.07243.
+- Penaloza, Gouvert, Wu, Charlin (2024). TEARS: Textual Representations for Scrutable Recommendations. arXiv 2410.19302.
+- Jiang, Hao, Cho et al. (2025). Know Me, Respond to Me (PersonaMem). arXiv 2504.14225.（第一轮按 arXiv 号列过，这次读的是完整摘要，不重复计数）
+- Kolluri, Su, Jahanbakhsh et al. (2025). Alexandria. arXiv 2505.10839.（第一轮读过正式版摘要，不重复计数）
+- Epstein, Jahanbakhsh, Piccardi et al. (2025). Whose Values? Measuring the (Subjective) Expression of Basic Human Values in Social Media. arXiv 2511.08453.
+- Jahanbakhsh, Zhao, Piccardi et al. (2025). Value Alignment of Social Media Ranking Algorithms. arXiv 2509.14434.
+- Wu, F. et al. (2020). MIND: A Large-scale Dataset for News Recommendation. ACL 2020.（摘要取自 ACL Anthology）
+全文（正文，不含附录）：
+- BELA: Benchmarking In-context Experiential Learning Through Repeated Product Recommendations. arXiv 2511.22130.
+- Mem-PAL: Towards Memory-based Personalized Dialogue Assistants for Long-term User-Agent Interaction. arXiv 2511.13410.
+没读到：STELA；Enabling User Agency in Scalable Content Recommendations；Li et al. AAMAS 2026。

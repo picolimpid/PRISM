@@ -1,0 +1,13 @@
+family,tests,p_lt_05,q_family_lt_05,q_global_lt_05
+A1 timing,12,12,12,12
+A2/A5 follow split and heterogeneity,347,231,222,221
+A6 regression,61,33,31,31
+Line B ranking,16,16,16,16
+RQ2 prediction,45,17,17,17
+RQ3 round 1,189,150,149,147
+RQ3 round 1 placebo(16),188,83,74,77
+RQ3 round 2 designs,1259,838,807,806
+RQ3 round 2 outcome model,231,150,141,141
+RQ3 round 2 post hoc,369,278,272,268
+RQ7/A8 writing,60,22,18,20
+ALL,2777,1830,1759,1756
