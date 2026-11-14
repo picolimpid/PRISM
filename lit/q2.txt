@@ -1,0 +1,40 @@
+Understanding Decentralized Social Feed Curation on Mastodon
+Shaping the Future of Social Media with Middleware
+User Control in Recommender Systems: Overview and Interaction Challenges
+Deplatforming did not decrease Parler users' activity on fringe social media
+Do Platform Migrations Compromise Content Moderation? Evidence from r/The_Donald and r/Incels
+For You, or For "You"? Everyday LGBTQ+ Encounters with TikTok
+Exploring Platform Migration Patterns between Twitter and Mastodon: A User Behavior Study
+Harnessing Our Inner Angels and Demons: What We Have Learned About Want/Should Conflicts
+Highbrow Films Gather Dust: Time-Inconsistent Preferences and Online DVD Rentals
+Algorithmic Effects on the Diversity of Consumption on Spotify
+First I "like" it, then I hide it: Folk Theories of Social Feeds
+Understanding User Beliefs About Algorithmic Curation in the Facebook News Feed
+The Illusion of Control: Placebo Effects of Control Settings
+The algorithmic imaginary: exploring the ordinary affects of Facebook algorithms
+Curated Flows: A Framework for Mapping Media Exposure in the Digital Age
+Pre-test with Caution: Event-Study Estimates after Testing for Parallel Trends
+Estimating dynamic treatment effects in event studies with heterogeneous treatment effects
+Sensitivity Analysis in Observational Research: Introducing the E-Value
+Like-minded sources on Facebook are prevalent but not polarizing
+Asymmetric ideological segregation in exposure to political news on Facebook
+Form-From: A Design Space of Social Media Systems
+Decentralizing Platform Power: A Design Space of Multi-level Governance in Online Social Platforms
+Reinforcing Spirals: The Mutual Influence of Media Selectivity and Media Effects and Their Impact on Individual Behavior and Social Identity
+Media Use and Political Predispositions: Revisiting the Concept of Selective Exposure
+Applying Common Identity and Bond Theory to Design of Online Communities
+The Reader-to-Leader Framework: Motivating Technology-Mediated Social Participation
+Mental Health Support and its Relationship to Linguistic Accommodation in Online Communities
+The Amplification Paradox in Recommender Systems
+Auditing radicalization pathways on YouTube
+Spillover of Antisocial Behavior from Fringe Platforms: The Unintended Consequences of Community Banning
+Experiencing algorithms: How young people understand, feel about, and engage with algorithmic news selection on social media
+Quantifying social organization and political polarization in online platforms Waller Anderson
+Drivers of social influence in the Twitter migration to Mastodon
+Where Consumers Diverge from Others: Identity Signaling and Product Domains
+Characterizing Twitter users who engage in adversarial interactions against political candidates
+Echo chambers, filter bubbles, and polarisation: a literature review
+The welfare effects of social media Allcott
+Digital Addiction Allcott Gentzkow Song
+Beyond Preferences in AI Alignment
+Community embeddings reveal large-scale cultural organization of online platforms

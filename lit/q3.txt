@@ -1,0 +1,30 @@
+LaMP: When Large Language Models Meet Personalization
+LongLaMP: A Benchmark for Personalized Long-form Text Generation
+PersonalLLM: Tailoring LLMs to Individual Preferences
+Know Me, Respond to Me: Benchmarking LLMs for Dynamic User Profiling and Personalized Responses at Scale
+Do LLMs Recognize Your Preferences? Evaluating Personalized Preference Following in LLMs
+Aligning LLM Agents by Learning Latent Preference from User Edits
+HyPerAlign: Interpretable Personalized LLM Alignment via Hypothesis Generation
+PERSONA: A Reproducible Testbed for Pluralistic Alignment
+Can LLM be a Personalized Judge?
+Large Language Models are Zero-Shot Rankers for Recommender Systems
+ONCE: Boosting Content-based Recommendation with Both Open- and Closed-source Large Language Models
+On Natural Language User Profiles for Transparent and Scrutable Recommendation
+Text Representations for Scrutable Recommendations TEARS
+Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction
+On Generative Agents in Recommendation
+Generative Agent Simulations of 1,000 People
+Out of One, Many: Using Language Models to Simulate Human Samples
+Large language models that replace human participants can harmfully misportray and flatten identity groups
+STELA: a community-centred approach to norm elicitation for AI alignment
+Measuring human values in social media posts Schwartz values feed Epstein
+A Roadmap to Pluralistic Alignment
+Personalization of Large Language Models: A Survey
+MIND: A Large-scale Dataset for News Recommendation
+Whose Opinions Do Language Models Reflect?
+Enabling User Agency in Scalable Content Recommendations with Large Language Models
+Social Simulacra: Creating Populated Prototypes for Social Computing Systems
+Y Social: an LLM-powered Social Media Digital Twin
+Simulating Social Media Using Large Language Models to Evaluate Alternative News Feed Algorithms
+Can Large Language Model Agents Simulate Human Trust Behavior?
+PersonaChat Personalizing Dialogue Agents: I have a dog, do you have pets too?

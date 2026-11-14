@@ -1,0 +1,50 @@
+I'm in the Bluesky Tonight: Insights from a Year's Worth of Social Data
+Looking AT the Blue Skies of Bluesky
+Bluesky and the AT Protocol: Usable Decentralized Social Media
+Bluesky: Network topology, polarization, and algorithmic curation
+The Dawn of Decentralized Social Media: An Exploration of Bluesky's Public Opening
+The Challenge of Understanding What Users Want: Inconsistent Preferences and Engagement Optimization
+Engagement, User Satisfaction, and the Amplification of Divisive Content on Social Media
+Building Human Values into Recommender Systems: An Interdisciplinary Synthesis
+Embedding Democratic Values into Social Media AIs via Societal Objective Functions
+Alexandria: A Library of Pluralistic Values for Realtime Re-Ranking of Social Media Feeds
+Reranking partisan animosity in algorithmic social media feeds alters affective polarization
+Mapping the Design Space of Teachable Social Media Feed Experiences
+Bonsai: Intentional and Personalized Social Media Feeds
+Reasoning about Invisible Algorithms in News Feeds I always assumed that I wasn't really that close to her
+Algorithms ruin everything: #RIPTwitter, folk theories, and resistance to algorithmic change in social media
+When Users Control the Algorithms: Values Expressed in Practices on Twitter
+Putting Users in Control of their Recommendations
+How do social media feed algorithms affect attitudes and behavior in an election campaign?
+Algorithmic amplification of politics on Twitter
+How the Design of YouTube Influences User Sense of Agency
+Personalizing Content Moderation on Social Media: User Perspectives on Moderation Choices, Interface Design, and Labor
+Gobo: A System for Exploring User Control of Invisible Algorithms in Social Media
+Algorithmic Folk Theories and Identity: How TikTok Users Co-Produce Knowledge of Identity and Engage in Algorithmic Resistance
+Behaviorism is Not Enough: Better Recommendations through Listening to Users
+So, Tell Me What Users Want, What They Really, Really Want!
+From Optimizing Engagement to Measuring Value
+What We Know About Using Non-Engagement Signals in Content Ranking
+Distinguishing influence-based contagion from homophily-driven diffusion in dynamic networks
+Homophily and Contagion Are Generically Confounded in Observational Social Network Studies
+No country for old members: user lifecycle and linguistic change in online communities
+Social selection and peer influence in an online social network
+Feedback effects between similarity and social influence in online communities
+Using Longitudinal Social Media Analysis to Understand the Effects of Early College Alcohol Use
+The Language of Social Support in Social Media and Its Effect on Suicidal Ideation Risk
+Distilling the Outcomes of Personal Experiences: A Propensity-scored Analysis of Social Media
+Subscriptions and external links help drive resentful users to alternative and extremist YouTube channels
+Users choose to engage with more partisan news than they are exposed to on Google Search
+Difference-in-Differences with multiple time periods Callaway Sant'Anna
+Quantifying social organization and political polarization in online platforms
+Community Identity and User Engagement in a Multi-Community Landscape
+All Who Wander: On the Prevalence and Characteristics of Multi-community Engagement
+Loyalty in Online Communities
+Flocking to Mastodon: Tracking the Great Twitter Migration
+Moving Across Lands: Online Platform Migration in Fandom Communities
+Preference Amplification in Recommender Systems
+Estimating and Penalizing Induced Preference Shifts in Recommender Systems
+How Algorithmic Confounding in Recommendation Systems Increases Homogeneity and Decreases Utility
+Exposure to ideologically diverse news and opinion on Facebook
+Transparent and Scrutable Recommendations Using Natural Language User Profiles
+Examining the consumption of radical content on YouTube
