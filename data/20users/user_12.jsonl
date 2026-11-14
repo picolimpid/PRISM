@@ -1,7 +1,0 @@
-{"type": "meta", "schema_version": "1.0", "fields": ["user_id", "timestamp", "feed", "exposure_type", "post_id", "post_content", "comment_content"]}
-{"user_id": 12, "timestamp": "2024-02-09 07:18:00", "feed": null, "exposure_type": "commenter", "post_id": 2380429, "post_content": "Hello... I am new here", "comment_content": "Testing... So far good !"}
-{"user_id": 12, "timestamp": "2024-02-09 14:19:00", "feed": null, "exposure_type": "commenter", "post_id": 59084443, "post_content": "@@12 Your cat memes are very cool. You’ll get way more reposts on Blusky if you also put alt text on them. Best wishes!", "comment_content": "Oh ! Thanks for the info"}
-{"user_id": 12, "timestamp": "2024-02-09 11:51:00", "feed": null, "exposure_type": "commenter", "post_id": 59084445, "post_content": "@@12 nice to meet you", "comment_content": "😸"}
-{"user_id": 12, "timestamp": "2024-02-09 11:38:00", "feed": null, "exposure_type": "commenter", "post_id": 134519, "post_content": "", "comment_content": "😼"}
-{"user_id": 12, "timestamp": "2024-02-09 06:43:00", "feed": null, "exposure_type": "poster", "post_id": 59084467, "post_content": "hey", "comment_content": null}
-{"user_id": 12, "timestamp": "2024-02-09 06:25:00", "feed": null, "exposure_type": "poster", "post_id": 2380429, "post_content": "Hello... I am new here", "comment_content": null}
